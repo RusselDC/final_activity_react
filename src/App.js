@@ -1,24 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import axios from "axios";
+import * as React from "react"
+import "./styles/style.css"
+import { AppBar, Toolbar, Box, Container } from '@mui/material';
+import Application from "./components/Application";
+
+
 
 function App() {
+
+  //React.useEffect(() => {
+  //    const fetchData = async() =>
+  //    {
+  //      const response = await axios.get("http://www.omdbapi.com/?apikey=387b2d33&t=Transformers")
+  //      console.log(response)
+  //    }
+  //
+  //    fetchData()
+  //},[])
+
+
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <AppBar position="static" sx={
+      { 
+        padding: 0,
+        margin: 0,
+        width: '100vw',
+        height: '100vh',
+        backgroundColor: "#556678",
+        boxShadow: 'none',
+        position: 'relative',
+        overflowY: 'scroll',
+        }}
+        disableGuters
         >
-          Learn React
-        </a>
-      </header>
-    </div>
+        <Application/>
+        </AppBar>
   );
 }
 
