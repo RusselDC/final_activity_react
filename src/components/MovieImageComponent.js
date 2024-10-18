@@ -1,4 +1,9 @@
-export default function MovieImageComponent() {
+
+
+export default function MovieImageComponent({moviePicture}) {
+
+   
+
     return (
         <div style={{ 
             height: "100%", 
@@ -10,7 +15,7 @@ export default function MovieImageComponent() {
             overflow: "hidden"
         }}>
             <img
-                src="https://m.media-amazon.com/images/I/A1QQe00cn0L._AC_UF894,1000_QL80_.jpg"
+                src={moviePicture}
                 alt="Background"
                 style={{
                     height: "100%",

@@ -32,6 +32,21 @@ function App() {
         boxShadow: 'none',
         position: 'relative',
         overflowY: 'scroll',
+        overflowX:'hidden',
+        scrollbarWidth: 'none', // Hides scrollbar in Firefox
+        '&::-webkit-scrollbar': {
+          width: '6px', // Minimal width
+        },
+        '&::-webkit-scrollbar-track': {
+          backgroundColor: 'transparent', // Hides track
+        },
+        '&::-webkit-scrollbar-thumb': {
+          backgroundColor: '#888', // Thumb color
+          borderRadius: '999px', // Capsule-like thumb
+        },
+        '&::-webkit-scrollbar-thumb:hover': {
+          backgroundColor: '#555', // Darker on hover
+        }
         }}
         disableGuters
         >
