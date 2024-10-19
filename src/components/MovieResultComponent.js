@@ -13,6 +13,7 @@ export default function MovieResultComponent({setSearchData,handleSubmit,movieDa
                 height: "100%",
                 margin: 0,
                 padding: 0,
+                backgroundColor: "rgba(0, 0, 0, 0.5)", 
             }}
         >
             <Grid container spacing={2} sx={{ width: "100%", margin: 0, height:"100%" }}>

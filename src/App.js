@@ -1,7 +1,7 @@
-import axios from "axios";
+
 import * as React from "react"
 import "./styles/style.css"
-import { AppBar, Toolbar, Box, Container } from '@mui/material';
+import { AppBar} from '@mui/material';
 import Application from "./components/Application";
 
 
@@ -28,27 +28,27 @@ function App() {
         margin: 0,
         width: '100vw',
         height: '100vh',
-        backgroundColor: "#556678",
+        background:"url('https://wallpapers.com/images/featured/movie-9pvmdtvz4cb0xl37.jpg')",
         boxShadow: 'none',
         position: 'relative',
         overflowY: 'scroll',
         overflowX:'hidden',
-        scrollbarWidth: 'none', // Hides scrollbar in Firefox
+        scrollbarWidth: 'none', 
         '&::-webkit-scrollbar': {
-          width: '6px', // Minimal width
+          width: '6px', 
         },
         '&::-webkit-scrollbar-track': {
-          backgroundColor: 'transparent', // Hides track
+          backgroundColor: 'transparent', 
         },
         '&::-webkit-scrollbar-thumb': {
-          backgroundColor: '#888', // Thumb color
-          borderRadius: '999px', // Capsule-like thumb
+          backgroundColor: '#888', 
+          borderRadius: '999px', 
         },
         '&::-webkit-scrollbar-thumb:hover': {
-          backgroundColor: '#555', // Darker on hover
+          backgroundColor: '#555', 
         }
         }}
-        disableGuters
+        
         >
         <Application/>
         </AppBar>

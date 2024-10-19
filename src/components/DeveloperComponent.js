@@ -1,5 +1,6 @@
 import { Box } from "@mui/material"
 import DeveloperImage from "./DeveloperImage"
+import DeveloperDetails from "./DeveloperDetails"
 
 export default function DeveloperComponent()
 {
@@ -17,7 +18,7 @@ export default function DeveloperComponent()
     >
 
     <Box sx={{height:"100%",width:"50%"}}>
-
+        <DeveloperDetails/>
     </Box>
     <Box sx={{height:"100%",width:"50%", display:"flex",justifyContent:"center",alignItems:"center"}}>
         <DeveloperImage/>

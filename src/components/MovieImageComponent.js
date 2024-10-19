@@ -10,9 +10,10 @@ export default function MovieImageComponent({moviePicture}) {
             width: "100%", 
             padding: 0, 
             margin: 0, 
-            boxShadow: "0 4px 15px rgba(0, 0, 0, 0.8)", // Add shadow here
-            borderRadius: "10px", // Optional: for rounded corners on the div
-            overflow: "hidden"
+            boxShadow: "0 4px 15px rgba(0, 0, 0, 0.8)", 
+            borderRadius: "10px", 
+            overflow: "hidden",
+           
         }}>
             <img
                 src={moviePicture}
